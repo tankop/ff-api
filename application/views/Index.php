@@ -8,14 +8,18 @@
     var csrfName = '<?= $this->security->get_csrf_token_name(); ?>';
     var csrfHash = '<?= $this->security->get_csrf_hash(); ?>';
 </script>
-<div class="main">
-    <div class="form-group has-search">
-        <span class="fa fa-search form-control-feedback"></span>
-        <input id="nameSearch" type="text" class="form-control" placeholder="<?= lang('default.00002') ?>">
+<div class="container">
+    <div class="row mt-5">
+        <div class="col-8 mx-auto">
+            <div class="form-group has-search">
+                <span class="fa fa-search form-control-feedback"></span>
+                <input id="nameSearch" type="text" class="form-control" placeholder="<?= lang('default.00002') ?>">
+            </div>
+        </div>
     </div>
-</div>
-<div class="row">
-    <div class="col-10 mx-auto">
-        <div id="hotel-table"></div>
+    <div class="row">
+        <div class="col-10 mx-auto">
+            <div id="hotel-table"></div>
+        </div>
     </div>
 </div>
